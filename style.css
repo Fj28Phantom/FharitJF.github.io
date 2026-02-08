@@ -3,8 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Cursor solo en dispositivos con mouse */
 @media (hover: hover) {
-    * { cursor: url('1.png'), auto !important; }
+    * {
+        cursor: url('1.png'), auto !important;
+    }
 }
 
 
@@ -330,43 +335,6 @@ body, html {
         width: 60px !important;
     }
 }
-/* ===== Ajuste fondo screen2 en celular ===== */
-@media (max-width: 430px) {
-
-    #screen2 {
-        width: 100% !important;
-        margin-left: 0 !important;
-
-        /* Fondo responsive */
-        background-size: cover !important;
-        background-position: center top !important;
-        background-repeat: no-repeat !important;
-
-        min-height: 100vh;
-    }
-
-}
-/* ============================= */
-/* MOBILE FIX SCREEN 2 (FULL)    */
-/* ============================= */
-
-@media (max-width: 768px) {
-
-    body, html {
-        overflow: auto;
-    }
-
-    #screen2 {
-        width: 100% !important;
-        margin-left: 0 !important;
-        height: auto;
-        min-height: 100vh;
-
-        background-size: cover !important;
-        background-position: center center !important;
-        background-repeat: no-repeat;
-    }
-
     /* ---- Reescalar elementos absolutos ---- */
 
     #screen2 .notes-title {
