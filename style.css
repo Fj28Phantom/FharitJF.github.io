@@ -330,3 +330,19 @@ body, html {
         width: 60px !important;
     }
 }
+/* ===== Ajuste fondo screen2 en celular ===== */
+@media (max-width: 430px) {
+
+    #screen2 {
+        width: 100% !important;
+        margin-left: 0 !important;
+
+        /* Fondo responsive */
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 100vh;
+    }
+
+}
