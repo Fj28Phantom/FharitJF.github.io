@@ -346,3 +346,73 @@ body, html {
     }
 
 }
+/* ============================= */
+/* MOBILE FIX SCREEN 2 (FULL)    */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    body, html {
+        overflow: auto;
+    }
+
+    #screen2 {
+        width: 100% !important;
+        margin-left: 0 !important;
+        height: auto;
+        min-height: 100vh;
+
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat;
+    }
+
+    /* ---- Reescalar elementos absolutos ---- */
+
+    #screen2 .notes-title {
+        top: 8% !important;
+        left: 10% !important;
+        font-size: 4vw;
+    }
+
+    #screen2 .title-img {
+        top: 12% !important;
+        right: 10% !important;
+        height: 22vh !important;
+    }
+
+    #screen2 .film-strip {
+        top: 25% !important;
+        left: -8% !important;
+        height: 50vh !important;
+    }
+
+    #screen2 .letter-img {
+        top: 25% !important;
+        right: 2% !important;
+        height: 55vh !important;
+    }
+
+    #screen2 .calendar-img {
+        bottom: 8% !important;
+        right: 30% !important;
+        height: 20vh !important;
+    }
+
+    #screen2 .col-right img:nth-child(1) {
+        top: 18% !important;
+        right: 35% !important;
+        height: 12vh !important;
+    }
+
+    #screen2 .col-right img:nth-child(3) {
+        top: 70% !important;
+        right: 40% !important;
+        height: 14vh !important;
+    }
+
+    /* Corazones menos invasivos */
+    .corazon {
+        transform: scale(0.5);
+    }
+}
